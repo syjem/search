@@ -1,18 +1,15 @@
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/700.css";
+import "./scss/styles.scss";
 
-import "./styles/styles.scss";
-import GoogleSearch from "./components/MainSearch";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/GoogleSearchPage";
+import SearchImage from "./pages/ImageSearchPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <GoogleSearch />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/images" element={<SearchImage />} />
+    </Routes>
   );
 }
 
