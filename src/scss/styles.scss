@@ -1,0 +1,215 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 5rem 1rem;
+  position: relative;
+  text-align: center;
+
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: fixed;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .nav-menu {
+        gap: 1rem;
+        display: flex;
+        padding: 1rem;
+        list-style: none;
+        align-items: center;
+
+        .nav-item {
+          cursor: pointer;
+
+          a {
+            padding: 0.3rem;
+            color: rgba(255, 255, 255, 0.87);
+          }
+
+          &.gmail:hover,
+          &.images:hover {
+            text-decoration: underline;
+          }
+
+          .google-apps {
+            padding: 0.4rem;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: #2c2d2e;
+            }
+          }
+
+          .avatar {
+            outline: 4px solid transparent;
+
+            &:focus,
+            &:focus-visible {
+              outline: auto -webkit-focus-ring-color;
+            }
+
+            &:hover {
+              outline-color: #2c2d2e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    padding-bottom: 5rem;
+
+    .main-image-wrapper {
+      display: flex;
+      margin: 0 auto;
+      width: fit-content;
+      position: relative;
+      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        & {
+          max-width: 50%;
+        }
+      }
+
+      .google-image {
+        border: 1px solid transparent;
+      }
+
+      .image-text-wrapper {
+        bottom: 0;
+        right: 1rem;
+        position: absolute;
+
+        @media screen and (max-width: 390px) {
+          & {
+            right: 0.5rem;
+            bottom: -0.2rem;
+          }
+        }
+
+        span {
+          padding: 0;
+          color: hsl(217, 89%, 61%);
+          font-size: clamp(0.6rem, 2.3vw, 1.2rem);
+        }
+      }
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      max-width: 600px;
+      min-width: 320px;
+      flex-direction: column;
+      justify-content: center;
+
+      .stack {
+        justify-content: center;
+
+        .search-btn {
+          text-transform: capitalize;
+        }
+      }
+
+      .search-bar {
+        width: 100%;
+        gap: 0.5rem;
+        display: flex;
+        padding: 0.4rem;
+        border-radius: 10px;
+        align-items: center;
+        margin-inline: auto;
+        border: 1px solid rgba(232, 234, 237, 0.3);
+
+        &:hover {
+          background-color: hsl(220, 3%, 17%);
+        }
+
+        &:focus-within {
+          box-shadow: 1px 1px 5px black;
+          border-color: rgba(232, 234, 237, 0.7);
+        }
+
+        .search-icon {
+          color: rgba(232, 234, 237, 0.6);
+        }
+
+        .q-search {
+          flex: 1;
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          padding: 0.7rem 0;
+          background-color: transparent;
+        }
+
+        .google-mic-icon,
+        .google-camera-icon {
+          cursor: pointer;
+          padding: 0.3rem;
+          border-radius: 50%;
+
+          &:hover {
+            background-color: rgb(54, 55, 56);
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding: 1rem 0;
+    color: #bdc1c6;
+    background-color: hsl(0, 0%, 9%);
+
+    h6 {
+      font-size: 1rem;
+    }
+
+    .advance-search-nav:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    div .separator-hr {
+      border: 1px solid transparent;
+      background-color: rgb(40, 40, 40);
+    }
+
+    p {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .footer-nav-info,
+    h6 {
+      padding: 0 2rem;
+
+      @media screen and (max-width: 768px) {
+        & {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}
