@@ -4,6 +4,7 @@ import Google from "../assets/google.png";
 
 import { Button, Stack } from "@mui/material";
 import SearchInput from "./SearchInput";
+import { Link } from "react-router-dom";
 
 export default function GoogleSearch() {
   const [search, setSearch] = useState<string>("");
@@ -13,11 +14,15 @@ export default function GoogleSearch() {
   };
 
   return (
-    <>
-      <img src={Google} alt="Google" className="google-main" />
+    <main className="main">
+      <div className="main-image-wrapper">
+        <Link to="/">
+          <img src={Google} alt="Google" className="google-image" />
+        </Link>
+      </div>
       <form action="https://google.com/search">
         <SearchInput search={search} handleSearch={handleSearch} />
-        <Stack spacing={2} direction="row" className="stack" mt={5}>
+        <Stack spacing={1.5} direction="row" className="stack" mt={5}>
           <Button className="search-btn" variant="contained" type="submit">
             Google Search
           </Button>
@@ -32,6 +37,6 @@ export default function GoogleSearch() {
           </Button>
         </Stack>
       </form>
-    </>
+    </main>
   );
 }
