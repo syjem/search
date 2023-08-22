@@ -16,10 +16,9 @@ const SearchInput: React.FC<SearchInputProps> = ({ search, handleSearch }) => {
     <div className="search-bar">
       <SearchIcon aria-label="search-icon" className="search-icon" />
       <input
-        type="text"
+        type="search"
         name="q"
         value={search}
-        autoFocus
         className="q-search"
         aria-label="Search"
         title="Search"
