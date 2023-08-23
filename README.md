@@ -13,17 +13,18 @@
 ## **Preview**
 
 <div align='center'>
+    <img src="./src/assets/preview.png" alt="Project Preview">
 </div>
 
 <br>
 
 ## **Links**
 
-- |                |      |
-  | :------------- | :--- |
-  | Solution URL:  | []() |
-  | Live Site URL: | []() |
-  |                |      |
+- |                |                                                                    |
+  | :------------- | :----------------------------------------------------------------- |
+  | Solution URL:  | [https://github.com/syjem/search](https://github.com/syjem/search) |
+  | Live Site URL: | []()                                                               |
+  |                |                                                                    |
 
 <br>
 
