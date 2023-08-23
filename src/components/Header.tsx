@@ -1,15 +1,40 @@
 import Profile from "../assets/avatar.jpg";
 
 import { SvgIcon, Tooltip } from "@mui/material";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Fade from "@mui/material/Fade";
 import Avatar from "@mui/material/Avatar";
-import { Stack } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Stack, Button } from "@mui/material";
+import { useLocation, Link } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
+  const navStyle = {
+    justifyContent: location.pathname !== "/" ? "space-between" : "flex-end",
+  };
+
   return (
     <header className="header">
-      <nav className="nav">
+      <nav className="nav" style={navStyle}>
+        {location.pathname !== "/" && (
+          <Stack className="back-home-btn">
+            <Link to={"/"}>
+              <Tooltip
+                title="Back to Home"
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 300 }}
+              >
+                <Button variant="text">
+                  <ArrowRightAltIcon
+                    className="arrow-right"
+                    aria-label="Back to Home button"
+                  />
+                </Button>
+              </Tooltip>
+            </Link>
+          </Stack>
+        )}
         <ul className="nav-menu">
           <li className="nav-item gmail">Gmail</li>
           <li className="nav-item images">
