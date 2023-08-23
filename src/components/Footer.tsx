@@ -1,4 +1,5 @@
 import { Stack } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
           gap={2}
         >
           <h6>Philippines</h6>
-          <h6 className="advance-search-nav">Advanced Search</h6>
+          <h6 className="advance-search-nav">
+            <Link to="/advanced_search">Advanced Search</Link>
+          </h6>
         </Stack>
         <hr className="separator-hr" />
         <Stack
