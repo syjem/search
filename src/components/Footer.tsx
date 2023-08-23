@@ -1,9 +1,19 @@
+import React from "react";
 import { Stack } from "@mui/material";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const footerStyle: React.CSSProperties = {
+    position: location.pathname === "/images" ? "fixed" : "static",
+    bottom: 0,
+    left: 0,
+    right: 0,
+  };
+
   return (
-    <footer className="footer">
+    <footer className="footer" style={footerStyle}>
       <Stack spacing={2}>
         <Stack
           direction="row"
