@@ -3,6 +3,7 @@ import { useState } from "react";
 import Google from "../assets/google.png";
 
 import { Button, Stack } from "@mui/material";
+import SearchForm from "./Form";
 import SearchInput from "./SearchInput";
 import { Link } from "react-router-dom";
 
@@ -20,7 +21,7 @@ export default function GoogleSearch() {
           <img src={Google} alt="Google" className="google-image" />
         </Link>
       </div>
-      <form action="https://google.com/search">
+      <SearchForm>
         <SearchInput search={search} handleSearch={handleSearch} />
         <Stack spacing={1.5} direction="row" className="stack" mt={5}>
           <Button className="search-btn" variant="contained" type="submit">
@@ -36,7 +37,7 @@ export default function GoogleSearch() {
             I'm Feeling Lucky
           </Button>
         </Stack>
-      </form>
+      </SearchForm>
     </main>
   );
 }
