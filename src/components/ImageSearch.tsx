@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import SearchInput from "./SearchInput";
 import Google from "../assets/google.png";
+import SearchForm from "./Form";
 
 const ImageSearch = () => {
   const [search, setSearch] = useState<string>("");
@@ -21,10 +22,10 @@ const ImageSearch = () => {
           <span>Images</span>
         </div>
       </div>
-      <form action="https://google.com/search">
+      <SearchForm>
         <SearchInput search={search} handleSearch={handleSearch} />
         <input type="hidden" name="tbm" value="isch" />
-      </form>
+      </SearchForm>
     </main>
   );
 };
