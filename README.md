@@ -7,8 +7,6 @@
     <img src="https://img.shields.io/badge/Status-Completed-00CE80?style=for-the-badge" alt="Status Completed">
   </a> &nbsp;&nbsp;&nbsp;
 </div>
-<br />
-<br />
 
 ## **Preview**
 
@@ -20,24 +18,11 @@
 
 ## **Links**
 
-- |                |                                                                    |
-  | :------------- | :----------------------------------------------------------------- |
-  | Solution URL:  | [https://github.com/syjem/search](https://github.com/syjem/search) |
-  | Live Site URL: | []()                                                               |
-  |                |                                                                    |
-
-<br>
-
-## Pagespeed Insights Score:
-
-- |                                                                                                                                                                     |
-  | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-  |                                     <b>Overall score 97.4% for Both Mobile & Desktop</b><br>(Below score is for mobile devices)                                     |
-  |                                                                                                                                                                     |
-  |                                                 <img src='./images/pagespeed-insights-score.svg' alt='Scoreboard'>                                                  |
-  |                                                                                                                                                                     |
-  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-0xabdulkhalid-github-io-news-homepage/tdffinbwjg?form_factor=desktop) to get live score |
-  |                                                                                                                                                                     |
+- |                |                                                                      |
+  | :------------- | :------------------------------------------------------------------- |
+  | Solution URL:  | [https://github.com/syjem/search](https://github.com/syjem/search)   |
+  | Live Site URL: | [https://search-syjem.vercel.app/](https://search-syjem.vercel.app/) |
+  |                |                                                                      |
 
 <br>
 
