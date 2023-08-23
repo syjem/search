@@ -1,27 +1,80 @@
-# React + TypeScript + Vite
+# Project 0 - Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Badges -->
+<div align="center">
+  <!-- Status -->
+  <a href="#">
+    <img src="https://img.shields.io/badge/Status-Completed-00CE80?style=for-the-badge" alt="Status Completed">
+  </a> &nbsp;&nbsp;&nbsp;
+</div>
+<br />
+<br />
 
-Currently, two official plugins are available:
+## **Preview**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align='center'>
+</div>
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## **Links**
 
-- Configure the top-level `parserOptions` property like this:
+- |                |      |
+  | :------------- | :--- |
+  | Solution URL:  | []() |
+  | Live Site URL: | []() |
+  |                |      |
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+<br>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Pagespeed Insights Score:
+
+- |                                                                                                                                                                     |
+  | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+  |                                     <b>Overall score 97.4% for Both Mobile & Desktop</b><br>(Below score is for mobile devices)                                     |
+  |                                                                                                                                                                     |
+  |                                                 <img src='./images/pagespeed-insights-score.svg' alt='Scoreboard'>                                                  |
+  |                                                                                                                                                                     |
+  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-0xabdulkhalid-github-io-news-homepage/tdffinbwjg?form_factor=desktop) to get live score |
+  |                                                                                                                                                                     |
+
+<br>
+
+## The Project
+
+- Your website must meet the following requirements:
+
+  - Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search:
+    - On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
+  - On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
+    - Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
+  - On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+  - On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own [advanced search](https://www.google.com/advanced_search) options)
+    - Find pages with… “all these words:”
+    - Find pages with… “this exact word or phrase:”
+    - Find pages with… “any of these words:”
+    - Find pages with… “none of these words:
+  - Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
+    - Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text.
+    - When the “Advanced Search” button is clicked, the user should be taken to the search results page for their given query.
+  - Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
+    - You may encounter a redirect notice when using the “I’m Feeling Lucky” button. Not to worry! This is an expected consequence of a security feature implemented by Google.
+  - The CSS you write should resemble Google’s own aesthetics.
+
+<br>
+
+## **Built With**
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/) &nbsp; [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) &nbsp; [![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)](https://mui.com/) &nbsp; [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/en/main) &nbsp; [![SCSS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+
+<br>
+
+## **Hosted With**
+
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+
+## **Acknowledgment**
+
+- [CS50 Web Programming with JavaScript and Python](https://cs50.harvard.edu/web/2020/)
+
+<br>
