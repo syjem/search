@@ -269,7 +269,7 @@
     background-color: hsl(0, 0%, 9%);
 
     h6 {
-      font-size: 1rem;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
     }
 
     .advance-search-nav:hover {
@@ -282,12 +282,15 @@
       background-color: rgb(40, 40, 40);
     }
 
-    p {
-      cursor: pointer;
+    .footer-nav-info {
+      p {
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+        cursor: pointer;
 
-      &:hover {
-        text-decoration: underline;
-        transition: 0.3s ease;
+        &:hover {
+          text-decoration: underline;
+          transition: 0.3s ease;
+        }
       }
     }
 
