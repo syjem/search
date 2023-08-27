@@ -1,4 +1,4 @@
-# Project 0 - Search
+# Project 0: Search
 
 <!-- Badges -->
 <div align="center">
@@ -23,6 +23,18 @@
   | Solution URL:  | [https://github.com/syjem/search](https://github.com/syjem/search)   |
   | Live Site URL: | [https://search-syjem.vercel.app/](https://search-syjem.vercel.app/) |
   |                |                                                                      |
+
+<br>
+
+## Lighthouse Insights Score:
+
+- |                                                               |
+  | :-----------------------------------------------------------: |
+  |               <br>(Below score is for desktop)                |
+  |                                                               |
+  | <img src="./src/assets/lighthouse_test.png" alt='Scoreboard'> |
+  |                                                               |
+  |                                                               |
 
 <br>
 
