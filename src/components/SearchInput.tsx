@@ -22,6 +22,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ search, handleSearch }) => {
         className="q-search"
         aria-label="Search"
         title="Search"
+        autoComplete="off"
         onChange={(e) => handleSearch(e.target.value)}
       />
       <Tooltip
