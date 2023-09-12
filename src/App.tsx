@@ -1,18 +1,27 @@
 import "./scss/styles.scss";
 
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/GoogleSearchPage";
 import SearchImage from "./pages/ImageSearchPage";
 import SearchAdvanced from "./pages/AdvancedSearchPage";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/images" element={<SearchImage />} />
-      <Route path="/advanced_search" element={<SearchAdvanced />} />
-    </Routes>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/images",
+      element: <SearchImage />,
+    },
+    {
+      path: "/advanced_search",
+      element: <SearchAdvanced />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

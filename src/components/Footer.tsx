@@ -6,10 +6,7 @@ const Footer = () => {
   const location = useLocation();
 
   const footerStyle: React.CSSProperties = {
-    position: location.pathname === "/images" ? "fixed" : "static",
-    bottom: 0,
-    left: 0,
-    right: 0,
+    position: location.pathname === "/advanced_search" ? "static" : "absolute",
   };
 
   return (
