@@ -1,5 +1,6 @@
 import { useState, ChangeEvent } from "react";
 import SearchForm from "./Form";
+import { useLocation } from "react-router-dom";
 
 import { Button } from "@mui/material";
 
@@ -38,6 +39,8 @@ const AdvancedSearch = () => {
     )
   );
 
+  const location = useLocation();
+
   const handleAdvancedSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
     setAdvancedSearch((prevValue) => ({
@@ -46,8 +49,12 @@ const AdvancedSearch = () => {
     }));
   };
 
+  const mainStyle: React.CSSProperties = {
+    marginBottom: location.pathname === "/advanced_search" ? "6rem" : 0,
+  };
+
   return (
-    <main className="main">
+    <main className="main" style={mainStyle}>
       <div className="advanced-main-header">
         <h2>Advanced Search</h2>
       </div>
