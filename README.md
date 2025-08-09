@@ -31,7 +31,7 @@
 - |                |                                                                      |
   | :------------- | :------------------------------------------------------------------- |
   | Solution URL:  | [https://github.com/syjem/search](https://github.com/syjem/search)   |
-  | Live Site URL: | [https://search-syjem.vercel.app/](https://search-syjem.vercel.app/) |
+  | Live Site URL: | [https://search-gilt.vercel.app/](https://search-gilt.vercel.app/)   | 
   |                |                                                                      |
 
 <br>
