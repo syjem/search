@@ -1,14 +1,13 @@
-import AdvancedSearch from "../components/AdvancedSearch";
+import React from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import AdvancedSearch from "../components/AdvancedSearch";
 
 function SearchAdvanced() {
   return (
-    <>
+    <React.Fragment>
       <Header />
       <AdvancedSearch />
-      <Footer />
-    </>
+    </React.Fragment>
   );
 }
 
