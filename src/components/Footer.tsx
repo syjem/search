@@ -1,16 +1,9 @@
-import React from "react";
 import { Stack } from "@mui/material";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation();
-
-  const footerStyle: React.CSSProperties = {
-    position: location.pathname === "/advanced_search" ? "static" : "absolute",
-  };
-
   return (
-    <footer className="footer" style={footerStyle}>
+    <footer className="footer">
       <Stack spacing={2}>
         <Stack
           direction="row"
